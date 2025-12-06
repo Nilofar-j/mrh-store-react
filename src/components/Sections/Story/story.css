@@ -1,0 +1,30 @@
+button.image_wrapper {
+    outline: 3px solid #ccc;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+
+.modal_container {
+    position: absolute;
+    top: 10%;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.modal_container.active {
+    top: 60%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-header img.thumbnail-image {
+    width: 50px;
+    height: 50x;
+    border-radius: 50%;
+    box-shadow: 0 0 13px 1px #8b8b8b;
+}

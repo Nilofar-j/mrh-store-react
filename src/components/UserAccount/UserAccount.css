@@ -1,0 +1,60 @@
+.bg-full-screen-image {
+    background-image: url('https://mrh-store.com/static/media/background-min.9779c4cf.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 105vh;
+}
+
+.full-layout .content-body .card {
+    margin-bottom: 2.2rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+}
+
+form.form-group input.form-control {
+    color: #31eee8;
+    border: 1px solid #e0e0e0;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-clip: padding-box;
+}
+
+form.form-group input.form-control:focus {
+    border: 1px solid #31eee8;
+}
+
+form.form-group input.form-control.is-invalid {
+    border-color: #ea5455;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23ea5455'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' r='.6' fill='%23ea5455' stroke='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: calc(.625em + .7rem) calc(.625em + .7rem);
+    background-position: left calc(.3125em + .35rem) center;
+}
+
+form.form-group div.invalid-feedback {
+    display: block;
+}
+
+form.form-group div.valid-feedback {
+    display: none;
+}
+
+form.form-group button.submit-btn {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+form.form-group button.submit-btn:hover {
+    border-color: #a9b5c1;
+    box-shadow: 0 8px 25px -8px #b8c2cc;
+}
+
+.full-layout .content-body .login-card-footer {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    height: 40px;
+}
+
+.full-layout .content-body .login-card-footer .collapse {
+    display: none;
+}

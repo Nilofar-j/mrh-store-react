@@ -1,0 +1,43 @@
+header .header_main span.total-product {
+    height: 20px;
+    z-index: 1;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #31eee8;
+    color: #171420;
+    transform: scale(1) translate(50%, -50%);
+}
+
+header .header_main .user-account .dropdown-menu {
+    background-color: #171420;
+    left: -35px;
+    order: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    transform: translate3d(0px, 44px, 0px);
+    min-width: 8rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header .header_main .user-account .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.user-account .dropdown-menu .dropdown-divider {
+    background-color: #414561;
+    margin: .5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, .08);
+}
+
+.list-group-item {
+    transition: .2s;
+}
+
+.list-group-item:hover,
+.list-group-item:hover h6 {
+    background-color: #171420;
+    color: #b8b8b8;
+}

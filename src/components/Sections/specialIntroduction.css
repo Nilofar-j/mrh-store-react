@@ -1,0 +1,203 @@
+.special-section {
+    background-color: #100e16 !important;
+}
+
+.special-section button.custom-btn {
+    border-radius: 5px;
+    padding: 10px 25px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+button.custom-btn::before {
+    right: 0;
+    animation: shiny-btn1-rtl 3s ease-in-out infinite;
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: -180px;
+    width: 30px;
+    height: 100%;
+}
+
+@keyframes shiny-btn1-rtl {
+    0% {
+        transform: scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(0) rotate(-45deg);
+        opacity: .5;
+    }
+
+    81% {
+        transform: scale(4) rotate(-45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(50) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+.discount_swiper .swiper-wrapper {
+    padding-top: 35px;
+}
+
+.swiper-button-lock {
+    display: block;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.products .product-card {
+    width: 260px;
+    transition: all .5s ease-in-out;
+    border-radius: .5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.product-card div.image-wrapper {
+    width: 100%;
+    min-height: 270px;
+}
+
+.product-card div.image-wrapper img.card-img-top {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: contain;
+
+}
+
+.product-card .card-body {
+    padding: 21px 0 0;
+}
+
+
+.product-card .card-body h3.card-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #cbcacb;
+    padding-inline: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-card .card-body .btns-card {
+    padding: 0 1rem;
+}
+
+.product-card .card-body .btns-card button:not(button.favourite) {
+    margin-left: .9rem;
+    border: 1px solid #31eee8;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+    color: #31eee8;
+}
+
+.product-card .card-body .btns-card button:not(button.favourite):hover {
+    background-color: #31eee8;
+    color: #100e16;
+}
+
+.product-card .card-body .price p {
+    min-width: 150px;
+    text-align: right;
+}
+
+.product-card .card-body .price .card-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cbcacb;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+.product-card:hover {
+    transform: translateY(-13px);
+    border: 1px solid #31eee8;
+}
+
+
+.container-costumer {
+    width: 85%;
+    margin-inline: auto;
+}
+
+.home-page-banner-wrapper {
+    background: radial-gradient(circle, rgba(49, 238, 232, .4267682073) 0, rgba(23, 20, 32, 0) 40%);
+}
+
+.home-page-banner-wrapper .banner-card-wrapper {
+    margin: 40px 0;
+}
+
+.home-page-banner-wrapper .banner-card-wrapper .card {
+    transition: .5s;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.banner-card-wrapper .card-wrapper {
+    margin: 0 0 40px 0;
+}
+
+.banner-card-wrapper .imgBx img {
+    transform: scale(1);
+    transition: .9s;
+}
+
+.banner-card-wrapper:hover .imgBx img {
+    transition: .9s;
+    transform: scale(1.1);
+}
+
+section.about-home-section {
+    width: 100%;
+}
+
+section.about-home-section img.about-us-logo {
+    position: relative;
+    top: -4px;
+    width: 124px;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+section.about-home-section .title-home-page .title-shadow {
+    font-size: 50px;
+    filter: blur(4px);
+    color: grey;
+    opacity: .5;
+    /* width: 100vw; */
+}
+
+
+.about-home-section .about-home p {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: yekanbakh, sans-serif;
+    color: #cbcacb;
+}
+
+.about-home-section .about-home p a {
+    color: #31eee8;
+}

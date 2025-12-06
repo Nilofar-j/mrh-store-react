@@ -1,0 +1,83 @@
+div.title h2 {
+    color: #31eee8;
+    position: relative;
+    font-size: 25px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+div.title h2 .title-shadow {
+    position: absolute;
+    font-size: 50pt;
+    filter: blur(5px);
+    top: 40%;
+    color: grey;
+    opacity: .5;
+    width: 100vw;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.swiper_categories {
+    padding-top: 9.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.div-cat {
+    background: linear-gradient(180deg, rgba(23, 20, 32, 0), rgba(49, 238, 232, .2) 80%);
+    cursor: pointer;
+    height: 15em;
+}
+.div-cat img.img-category {
+    width: 100%;
+    max-height: 180px;
+    position: relative;
+    top: -15px;
+    object-fit: contain;
+    transition: .2s;
+    transform: scale(1.8);
+}
+
+.div-cat::before {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 2px;
+    top: 73.5%;
+    transition: .2s;
+    left: 0;
+    transform: rotate(4deg);
+    transform-origin: top left;
+    background-color: #31eee8;
+}
+.div-cat::after {
+    right: 0;
+    transform: rotate(-4deg);
+    transform-origin: top right;
+    background-color: #31eee8;
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 2px;
+    top: 73.5%;
+    transition: .2s;
+}
+
+.div-cat:hover .img-category {
+    top: -40px;
+}
+
+.div-cat:hover::before {
+    transform: rotate(0);
+
+}
+.div-cat:hover::after {
+    transform: rotate(0);
+}
+.category-title{
+    color: #ebeefd;
+    font-size: 1.20rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
